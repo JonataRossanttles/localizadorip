@@ -1,0 +1,116 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+#foto{
+    width: 100%;
+    height: 300px;
+    background-image: url('images/pattern-bg-desktop.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+#caixa_central{
+
+display: flex;
+flex-direction: column;
+align-items: center;
+position: absolute;
+top: 30px;
+    left: 0;
+    right: 0;
+    
+}
+
+#caixa_input{
+    margin-top: 30px;
+}
+
+input{
+    font-size: 18px;
+    padding: 10px;
+    width: 600px;
+    border-radius: 15px 0px 0px 15px;
+    border-style: none;
+    cursor: pointer;
+}
+input:focus{
+    outline: none;
+}
+#seta{
+    width: 55px;
+    height: 65px;
+    background-color: black;
+    border-radius: 0px 15px 15px 0px;
+    position: relative;
+    cursor: pointer;
+    
+}
+#seta:hover{
+    background-color: hsla(0, 0%, 17%, 0.877) ;
+}
+
+#img_setinha{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+#caixa_input{
+    display: flex;
+}
+
+#titulo{
+    color: white;
+    font-weight: 500;
+}
+
+#caixa_informação_geral{
+    display: flex;
+    align-content: center;
+    width: 70%;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    background-color: white;
+    border-radius: 20px;
+
+}
+.caixa_informação{
+    padding-left: 20px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+   
+}
+
+#caixa_informação_geral .caixa_informação:not(:last-child) {
+    border-right:  1px solid hsl(0, 0%, 59%);
+} 
+.titulo_informação{
+    font-size: 10px;
+    color:hsl(0, 0%, 59%);
+    letter-spacing: 2px
+}
+.informação{
+    font-size: 20px;
+    font-weight: 700;
+    color:hsl(0, 0%, 17%);
+    margin-top: 10px;
+}
+#map{
+    height: 100vh;
+    z-index: 0;
+}
