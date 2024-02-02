@@ -40,6 +40,7 @@ input{
     border-radius: 15px 0px 0px 15px;
     border-style: none;
     cursor: pointer;
+
 }
 input:focus{
     outline: none;
@@ -113,4 +114,63 @@ input:focus{
 #map{
     height: 100vh;
     z-index: 0;
+}
+
+@media screen and (max-width: 960px) {
+
+#caixa_informação_geral{
+    flex-direction: column;
+    height: 400px;
+    margin-top: 120px;
+   
+}
+#caixa_input{
+    width: 70%;
+}
+#caixa_informação_geral .caixa_informação:not(:last-child) {
+    border-right:  none;
+} 
+input{
+    width: 90%;
+}
+#seta{
+    width: 10%;
+   
+    
+}
+}
+@media screen and (max-width:650px){
+    input{
+        font-size: 15px;
+        
+    }
+    #titulo{
+        font-size: 25px;
+    }
+    input{
+        width: 80%;
+    }
+    #seta{
+        width: 20%;
+       
+        
+    }
+}
+@media screen and (max-width:570px){
+    input{
+        font-size: 12px;
+        
+    }
+    #titulo{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:518px){
+    input{
+        font-size: 10px;
+        
+    }
+    #titulo{
+        font-size: 18px;
+    }
 }
