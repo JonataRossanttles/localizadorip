@@ -1,7 +1,5 @@
-key = 'at_jhKFiIJKNpY3dgHRvJpQT8VCII5LR'
+const key = 'at_XvDGWX85ZMS55R1Avh2ppoxNVA0zg' 
 ip = '201.18.224.178 http://www.vtal.com  www.claro.com.br 177.56.183.188 "akamai.com"'
-//let linkip = `https://geo.ipify.org/api/v2/country,city,vpn?apiKey=at_jhKFiIJKNpY3dgHRvJpQT8VCII5LR&ipAddress=104.119.91.221`
-//let linkdomain = `https://geo.ipify.org/api/v2/country,city,vpn?apiKey=at_jhKFiIJKNpY3dgHRvJpQT8VCII5LR&domain=www.vivo.com.br`
 
 var ip = document.getElementById('endereço-ip') 
 var localizacao = document.getElementById('localização') 
@@ -25,7 +23,7 @@ function pesquisar(){
 
     if (!isNaN(information_final)){
         
-            var linkip = `https://geo.ipify.org/api/v2/country,city,vpn?apiKey=at_jhKFiIJKNpY3dgHRvJpQT8VCII5LR&ipAddress=${resposta}`
+            var linkip = `https://geo.ipify.org/api/v2/country,city,vpn?apiKey=${key}&ipAddress=${resposta}`
             fetch(linkip)
             .then(resolve => resolve.json())
             .then(dados => {
@@ -55,7 +53,7 @@ function pesquisar(){
         
     }else{
                
-            var linkdomain = `https://geo.ipify.org/api/v2/country,city,vpn?apiKey=at_jhKFiIJKNpY3dgHRvJpQT8VCII5LR&domain=${resposta}`
+            var linkdomain = `https://geo.ipify.org/api/v2/country,city,vpn?apiKey=${key}&domain=${resposta}`
             input.value = information
             fetch(linkdomain)
             .then(resolve => resolve.json())
